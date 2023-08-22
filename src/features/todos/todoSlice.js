@@ -1,10 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
-
-const initialState = {
-  high: {},
-  medium: {},
-  low: {},
-};
+import initialState from './initialState';
+import { fetchTodos } from './todoActions';
 
 const todoSlice = createSlice({
   name: 'todos',
@@ -18,6 +14,13 @@ const todoSlice = createSlice({
       const { urgency, taskId } = action.payload;
       delete state[urgency][taskId];
     },
+  },
+  extraReducers: (builder) => {
+    builder.addCase(fetchTodos.fulfilled, (state, action) => {
+      action.payload.forEach((todo) => {
+        state.low[todo.id] = todo;
+      });
+    });
   },
 });
 

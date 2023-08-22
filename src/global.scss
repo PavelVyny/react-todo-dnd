@@ -1,0 +1,13 @@
+@import 'normalize.css/normalize';
+
+@font-face {
+  font-family: WildWorld;
+  src: url('/fonts/WILDWORLD.otf') format('opentype');
+  font-weight: bold;
+}
+
+body {
+  font-family: WildWorld, sans-serif;
+  font-weight: bold;
+  color: #d700ff;
+}

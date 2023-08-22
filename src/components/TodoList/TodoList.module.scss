@@ -1,0 +1,30 @@
+.todoListContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  
+    .lowUrgency,
+    .mediumUrgency,
+    .highUrgency {
+      flex: 1;
+      margin: 0 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+  
+      h2 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+  
+      .todoItem {
+        padding: 5px;
+        border-bottom: 1px solid #eee;
+  
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+  
