@@ -9,5 +9,12 @@
 body {
   font-family: WildWorld, sans-serif;
   font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: #d700ff;
+  font-size: 14px;
+
+  @media (width >= 768px) {
+    font-size: 16px;
+  }
 }

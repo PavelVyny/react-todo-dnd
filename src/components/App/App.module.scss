@@ -1,19 +1,18 @@
 .appContainer {
-    min-height: 100vh;
-    position: relative;
-    background: #051622 url('/images/star-sky.webp') repeat-y;
-    text-align: center;
-    overflow-x: hidden;
-    animation: move-bg 80s linear infinite;
-  
-    @keyframes move-bg {
-      0% {
-        background-position: 0 0;
-      }
+  min-height: 100vh;
+  position: relative;
+  background: #051622 url('/images/star-sky.webp') repeat-y;
+  text-align: center;
+  overflow-x: hidden;
+  animation: move-bg 80s linear infinite;
 
-      100% {
-        background-position: 0 -100%;
-      }
+  @keyframes move-bg {
+    0% {
+      background-position: 0 0;
+    }
+
+    100% {
+      background-position: 0 -100%;
     }
   }
-  
+}

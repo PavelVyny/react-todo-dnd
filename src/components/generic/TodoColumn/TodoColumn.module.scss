@@ -1,0 +1,86 @@
+.column {
+  flex: 1;
+  width: 33%;
+  margin: 0 10px 20px;
+  border-radius: 5px;
+  max-height: calc(100vh - 150px);
+  padding: 10px 0;
+
+  @media (width >= 768px) {
+    margin: 0 10px;
+  }
+}
+
+.columnHeader {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+
+  @media (width >= 768px) {
+    font-size: 24px;
+  }
+}
+
+.columnContent {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: calc(100% - 80px);
+  padding: 10px 0;
+  position: relative;
+
+  .todoItem {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.todoListItemsContainer {
+  margin-top: 10px;
+  max-height: calc(100% - 15px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 10px;
+
+  &::-webkit-scrollbar {
+      width: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+      background-color: #d700ff;
+      border-radius: 10px;
+  }
+
+  /* For Firefox */
+  scrollbar-width: auto;
+  scrollbar-color: #d700ff transparent;
+}
+
+.clearAllButton {
+  position: absolute;
+  bottom: -20px;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 4px;
+  background-color: #c0392b;
+  color: #fff;
+  transition: background-color 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #e74c3c;
+  }
+
+  &:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+
+  @media (width >= 768px) {
+    padding: 5px 6px;
+  }
+}
