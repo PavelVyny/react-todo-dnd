@@ -1,0 +1,46 @@
+{
+  "name": "react-todo-dnd",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "lint:js": "eslint 'src/**/*.{js,jsx}'",
+    "lint:css": "stylelint 'src/**/*.{css,scss}'",
+    "lint:fix:js": "eslint 'src/**/*.{js,jsx}' --fix",
+    "lint:fix:css": "stylelint 'src/**/*.{css,scss}' --fix",
+    "format": "prettier --write 'src/**/*.{js,jsx,css,scss}'"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.4.0",
+    "normalize.css": "^8.0.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.1.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^6.0.0",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.2",
+    "sass": "^1.66.0",
+    "stylelint": "^15.10.2",
+    "stylelint-config-standard-scss": "^10.0.0",
+    "vite": "^4.4.5"
+  }
+}
